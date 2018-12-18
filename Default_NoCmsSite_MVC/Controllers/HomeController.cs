@@ -1,4 +1,5 @@
 ﻿using Default_NoCmsSite_MVC.Emails;
+using Default_NoCmsSite_MVC.log4you;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,8 @@ namespace Default_NoCmsSite_MVC.Controllers
 
     public ActionResult Index()
     {
+      Log.Debug("Hello");
+
       return View();
     }
 

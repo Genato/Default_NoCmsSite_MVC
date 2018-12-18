@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Default_NoCmsSite_MVC.log4you;
+using log4net.Config;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -17,6 +19,8 @@ namespace Default_NoCmsSite_MVC.Controllers
     /// <param name="filterContext"></param>
     protected override void OnException(ExceptionContext filterContext)
     {
+      
+
       base.OnException(filterContext);
     }
   }

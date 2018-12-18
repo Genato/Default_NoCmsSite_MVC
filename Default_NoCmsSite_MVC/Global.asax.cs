@@ -1,4 +1,5 @@
 ﻿using Default_NoCmsSite_MVC.App_Start;
+using log4net.Config;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,7 @@ namespace Default_NoCmsSite_MVC
       BundleConfig.RegisterBundles(BundleTable.Bundles);
 
       ConfigureDI.ConfigureDependencyInjection();
+      XmlConfigurator.Configure();
     }
   }
 }
